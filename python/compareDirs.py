@@ -3,9 +3,9 @@
 import filecmp
 from filecmp import dircmp
 
-dir1 = r"M:\plan\drc\projects\16055_St_Johns_Consolidation\12107_StJohnsLandfill"
-dir2 = r"M:\plan\drc\projects\16055_St_Johns_Consolidation\St_Johns_Landfill"
-textfile = r"M:\plan\drc\projects\16055_St_Johns_Consolidation\compareDirs_log.txt"
+dir1 = r""
+dir2 = r""
+textfile = r".txt"
 
 def print_diff_files(dcmp):
 	for name in dcmp.same_files:
