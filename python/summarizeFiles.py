@@ -11,8 +11,7 @@ import arcpy, os, time
 # from filecmp import dircmp
 from arcpy import env
 
-workspace = ws = r"G:\DATA\WORKING\UPDATED"
-arcpy.env.workspace = ws
+workspace = ws = r"G:\DATA\WORKING\UPDATED\\"
 arcpy.env.overwriteOutput = True
 # CONSTANTS ------------------------
 directory = r"G:\PROJECTS\20160110_GPS_Data_Update\WORKING\GNSS Projects\PublicWorks"
@@ -57,7 +56,10 @@ def processNewFiles(dir,wild):
 	if wild == ".shp":
 		for shp in new_files:
 			short = shp.replace(export_dir,"")
-			name = short.replace("\\","-")
+			name = short.replace("\\","")
+			folder = name[8:-4]
+			print folder
+			arcpy.env.workspace = ws+folder
 			arcpy.CopyFeatures_management(shp,name[:-4])
 
 try:
