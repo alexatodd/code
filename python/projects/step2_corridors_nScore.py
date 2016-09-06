@@ -79,7 +79,8 @@ crash_fields		=	"OBJECTID OBJECTID "+v+" NONE;\
 						HWY_COMPNT_LONG_DESC HWY_COMPNT_LONG_DESC "+h+" NONE;\
 						MLGE_TYP_CD MLGE_TYP_CD "+h+" NONE;\
 						MLGE_TYP_LONG_DESC MLGE_TYP_LONG_DESC "+h+" NONE;\
-						RD_CON_NO RD_CON_NO "+h+" NONE;\MP_NO MP_NO "+h+" NONE;\
+						RD_CON_NO RD_CON_NO "+h+" NONE;\
+						MP_NO MP_NO "+h+" NONE;\
 						LRS_VAL LRS_VAL "+h+" NONE;\
 						LAT_DEG_NO LAT_DEG_NO "+h+" NONE;\
 						LAT_MINUTE_NO LAT_MINUTE_NO "+h+" NONE;\
